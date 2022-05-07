@@ -18,7 +18,7 @@ async function scrape() {
     // Select div items
     const item = $("div#dp-container");
     // Populate the product object with the selected elements
-    product.name = $(item).find('h1 span#productTitle').text();
+    product.name = $(item).find('h1 span#productTitle').text().trim();
     product.image = $(item).find('img#landingImage').attr('src');
     product.price = $(item).find('div span#priceblock_ourprice').text();
     product.link = url
