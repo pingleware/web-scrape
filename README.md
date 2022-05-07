@@ -12,3 +12,7 @@ Note: Also ensure you have Node.js installed
 ###### To run the script
 
 `node webScrape.js`
+
+or
+
+`npm start`
